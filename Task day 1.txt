@@ -1,0 +1,42 @@
+Task day 1
+
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+The Hypertext Transfer Protocol (HTTP) is a fundamental protocol that enables communication between web servers and web clients. Since its inception, HTTP has gone through multiple revisions, with HTTP/1.1 being the most widely used version for years. However, in recent times, HTTP/2 has gained popularity as the next version of HTTP, offering significant improvements over its predecessor. In this blog post, we'll discuss the key differences between HTTP/1.1 and HTTP/2.
+
+Binary vs. Text Protocol
+The most significant difference between HTTP/1.1 and HTTP/2 is their underlying protocols. HTTP/1.1 uses a text-based protocol, while HTTP/2 employs a binary protocol. In HTTP/1.1, every request and response message is a text string sent over the network. In contrast, HTTP/2's binary protocol uses a more efficient binary format to reduce the amount of data sent over the network. This results in faster load times and improved overall performance.
+
+Multiplexing
+HTTP/1.1 uses a single request/response model, meaning that each request is sent over a separate connection, and the server can only send one response per request. This approach is not very efficient and can lead to slow load times, particularly when loading a page with many resources. HTTP/2, on the other hand, uses multiplexing, which enables multiple requests to be sent over a single connection. This means that the server can send multiple responses simultaneously, improving the overall load time.
+
+Server Push
+HTTP/1.1 requires the client to request all resources explicitly. This means that the server can't send any additional resources until the client requests them. HTTP/2 introduces server push, allowing the server to send additional resources to the client before it requests them. This reduces the number of requests made by the client, reducing the load time and improving performance.
+
+Header Compression
+HTTP/1.1 uses text-based headers, which can be lengthy and redundant, leading to increased network traffic. HTTP/2 uses header compression, which reduces the size of headers sent over the network. This results in improved performance and faster load times.
+
+Security
+While HTTP/1.1 supports Transport Layer Security (TLS) to encrypt communication between the server and the client, it is optional. In contrast, HTTP/2 requires the use of TLS, making it a more secure option.
+
+In conclusion, while HTTP/1.1 has been the standard for years, HTTP/2 offers significant improvements in terms of performance, efficiency, and security. Its binary protocol, multiplexing, server push, header compression, and mandatory TLS make it the preferred option for modern web applications.
+
+
+2. Write a blog about objects and its internal representation in Javascript
+
+
+In JavaScript, objects are one of the most fundamental data types. They are a collection of key-value pairs that represent real-world objects, such as a person, a car, or a book. Objects in JavaScript are dynamic, which means that their properties can be added, removed, or modified at runtime. In this blog post, we'll take a closer look at objects in JavaScript and their internal representation.
+
+Internal Representation of Objects in JavaScript
+
+JavaScript objects are represented as a collection of properties. Each property has a name and a value. The name is always a string, while the value can be any JavaScript data type, including another object. In fact, objects can contain other objects, which allows for complex data structures.
+
+Internally, JavaScript objects are implemented as a hash table. A hash table is a data structure that allows for efficient insertion, deletion, and retrieval of key-value pairs. In JavaScript, the hash table is known as the object's internal property table, and it's where all the properties of an object are stored.
+
+The internal property table is implemented as an array of property descriptors. Each property descriptor contains information about the property, such as its name, value, and attributes. The attributes define the behavior of the property, such as whether it's writable, enumerable, or configurable.
+
+When you create a new object in JavaScript, the engine allocates a new block of memory to hold the object's internal property table. The internal property table is initially empty, and you can add new properties to it using either dot notation or bracket notation.
+
+
+
+
